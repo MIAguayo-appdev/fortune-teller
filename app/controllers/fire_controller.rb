@@ -11,6 +11,7 @@ class FireController < ApplicationController
       @array_of_numbers.push(another_number)
     end
 
+
     render({ :template => "flame_interface/aries.html.erb" })
   end
 
@@ -25,8 +26,10 @@ class FireController < ApplicationController
       @array_of_numbers.push(another_number)
     end
 
-    render({ :template => "flame_interface/cleo.html.erb" })
+    render({ :template => "flame_interface/leo.html.erb" })
   end
+
+  
 
   def archer
     horoscope = "The high from your recent successes could make you want to purchase luxury items that you used to think were impractical, Sagittarius. This is fine as long as you're discriminating and don't give in to impulse buying. This also isn't a good time to overindulge in food or drink. You should let yourself enjoy your success while still using common sense."
